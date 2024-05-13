@@ -1,0 +1,33 @@
+export interface Company {
+  Symbol: string;
+  AssetType: string;
+  Name: string;
+  Description: string;
+  CIK: string;
+  Exchange: string;
+  Currency: string;
+  Country: string;
+  Sector: string;
+  Industry: string;
+  Address: string;
+  FiscalYearEnd: string;
+  LatestQuarter: string;
+  MarketCapitalization: string;
+  EBITDA: string;
+  PERatio: number;
+  PEGRatio: number;
+  BookValue: number;
+  DividendPerShare: string;
+  DividendYield: string;
+  EPS: number;
+  RevenuePerShareTTM: number;
+  ProfitMargin: string;
+  OperatingMarginTTM: string;
+  ReturnOnAssetsTTM: string;
+  ReturnOnEquityTTM: string;
+  RevenueTTM: string;
+  GrossProfitTTM: string;
+  DilutedEPSTTM: string;
+  QuarterlyEarningsGrowthYOY: string;
+  QuarterlyRevenueGrowthYOY: string;
+}
