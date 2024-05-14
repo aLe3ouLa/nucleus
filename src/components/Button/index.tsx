@@ -16,7 +16,7 @@ const ButtonColorClass = (variant: ButtonVariant) => {
         case ButtonVariant.PRIMARY:
             return " border-solid border-2 border-red-500 bg-red-500"
         case ButtonVariant.SECONDARY:
-            return "border-solid border-2 border-green-500 bg-green-500"
+            return "border-solid border-2 border-slate-700 bg-slate-700 text-white"
         case ButtonVariant.TERTIARY:
             return "border-solid border-2 border-slate-500 text-slate-500"
     }
@@ -24,6 +24,6 @@ const ButtonColorClass = (variant: ButtonVariant) => {
 
 export const Button: React.FC<ButtonProps> = ({ variant = ButtonVariant.PRIMARY, children }) => {
     return (
-        <button className={` ${ButtonColorClass(variant)} rounded-sm py-2 px-4 min-w-32 font-bold`}>{children}</button>
+        <button className={` ${ButtonColorClass(variant)} rounded-sm py-1 px-2 min-w-32 font-bold`}>{children}</button>
     )
 }

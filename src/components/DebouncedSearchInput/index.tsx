@@ -2,35 +2,6 @@ import { Search } from "lucide-react";
 import { useState } from "react";
 import { useDebounce } from "react-use";
 
-// const Input = styled.input`
-//   width: 100%;
-//   padding: var(--space-md) var(--space-lg);
-//   max-height: 60px;
-//   border-color: var(--input-border-color);
-//   border-radius: var(--border-radius);
-//   border-style: solid;
-//   border-width: 3px;
-//   margin: var(--space-lg) 0;
-//   color: rgb(var(--input-border-color));
-//   font-size: 24px;
-//   appearance: none;
-
-//   background-color: rgb(var(--input-background-color));
-
-//   @media (max-width: 600px) {
-//     font-size: 16px;
-//     }
-// `;
-
-// const SearchIcon = styled(Search)`
-//     position: absolute;
-// 	right: 30px;
-// 	top: 34px;
-// 	display: block;
-//     @media (max-width: 600px) {
-//         display: none;
-//     }
-// `
 
 type DebouncedSearchInputProps = {
     onSearchChange: (search: string) => void;
@@ -52,7 +23,7 @@ export const DebouncedSearchInput = ({
     return (
         <div className="relative self-center">
             <input
-                className="px-3 py-2 bg-slate-200 text-slate-800 font-bold"
+                className="px-3 py-2 bg-slate-200 text-slate-800 font-bold text-sm"
                 type="search"
                 placeholder={placeholder}
                 value={searchValue}
@@ -61,7 +32,7 @@ export const DebouncedSearchInput = ({
                 }}
                 disabled={disabled}
             />
-            {!searchValue && <Search className="text-slate-800 absolute top-2 right-2" />}
+            {!searchValue && <Search className="text-slate-800 absolute top-2 right-2 w-4" />}
         </div>
     );
 }
