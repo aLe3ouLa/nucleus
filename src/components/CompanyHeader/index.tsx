@@ -1,17 +1,18 @@
 import React from 'react'
 import { Button, ButtonVariant } from '../Button'
+import { Company } from '@/types/Company';
 
 interface CompanyHeaderProps {
-    companyName: string;
+    company: Company;
 }
 
-export default function CompanyHeader({ companyName }: CompanyHeaderProps) {
+export default function CompanyHeader({ company }: CompanyHeaderProps) {
     return (
         <section className='w-full'>
             <article className='flex items-start justify-between mb-4'>
                 <div>
-                    <h1 className='font-bold text-3xl mb-1'>{companyName}</h1>
-                    <p className='tracking-wide text-xs font-semibold mb-2'>TSLA:NASDAQ</p>
+                    <h1 className='font-bold text-3xl mb-1'>{company.Name}</h1>
+                    <p className='tracking-wide text-xs font-semibold mb-2'>{company.Symbol}:{company.Exchange}</p>
                     <p className='text-xs font-semibold text-slate-500'>RT Quote | Last NYSE Arca | VOL from CTA</p>
                 </div>
 

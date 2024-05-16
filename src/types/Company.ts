@@ -14,13 +14,13 @@ export interface Company {
   LatestQuarter: string;
   MarketCapitalization: string;
   EBITDA: string;
-  PERatio: number;
-  PEGRatio: number;
-  BookValue: number;
+  PERatio: string;
+  PEGRatio: string;
+  BookValue: string;
   DividendPerShare: string;
   DividendYield: string;
-  EPS: number;
-  RevenuePerShareTTM: number;
+  EPS: string;
+  RevenuePerShareTTM: string;
   ProfitMargin: string;
   OperatingMarginTTM: string;
   ReturnOnAssetsTTM: string;
