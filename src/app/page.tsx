@@ -1,6 +1,8 @@
-'use client'
-import DetailsHeader from "@/components/DetailsHeader";
+"use client";
+import CompanyDetails from "@/components/CompanyDetails";
+import CompanyHeader from "@/components/CompanyHeader";
 import Navigation from "@/components/Navigation";
+import StockGraph from "@/components/StockGraph";
 import { buildStocksUrls } from "@/utils/buildStocksUrl";
 
 // const getIncomeStatement = async () => {
@@ -12,18 +14,18 @@ import { buildStocksUrls } from "@/utils/buildStocksUrl";
 //   console.log(data)
 // };
 
-
 export default function Home() {
-
   // const data = getIncomeStatement();
 
   return (
     <>
       <Navigation />
-      <main className="flex min-h-screen flex-col items-center justify-between px-20 py-4">
-        <DetailsHeader companyName="Tesla Inc." />
+
+      <main className="flex min-h-screen flex-col items-center justify-between px-24 py-4">
+        <CompanyHeader companyName="Tesla Inc." />
+        <StockGraph />
+        <CompanyDetails />
       </main>
     </>
-
   );
 }

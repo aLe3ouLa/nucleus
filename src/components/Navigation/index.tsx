@@ -7,7 +7,7 @@ export default function Navigation() {
     return (
         <section>
             <nav>
-                <ul className='flex justify-between bg-white items-center px-12 py-2 border-b-2 border-slate-300'>
+                <ul className='flex justify-between bg-white items-center px-24 py-2 border-b-2 border-slate-300'>
                     <li className='flex items-center gap-2'> <Waves className='text-red-500' /><p className='text-zinc-700 font-bold text-lg'>Nucleus</p></li>
                     <div className='flex gap-2'>
                         <DebouncedSearchInput onSearchChange={(_: string) => { }} placeholder='Type to search...' />
@@ -18,7 +18,7 @@ export default function Navigation() {
                 </ul>
             </nav>
             <nav>
-                <ul className='flex bg-white items-center px-12 py-2 gap-4'>
+                <ul className='flex bg-white items-center px-24 py-2 gap-4'>
                     <li>Home</li>
                     <li>Watchlist</li>
                     <li>Portofolio</li>
@@ -30,7 +30,7 @@ export default function Navigation() {
                 </ul>
             </nav>
             <nav className='bg-slate-900 text-white'>
-                <ul className='flex gap-4 items-center px-12 py-2'>
+                <ul className='flex gap-4 items-center px-24 py-2'>
                     <li>Quote</li>
                     <li>Profile</li>
                     <li>Forecasts</li>
